@@ -6,7 +6,7 @@ html{
 p{
   font-family: 'Quicksand';
   color: #053138;
-  font-size: 100%;
+  font-size: 105%;
 }
 
 h2{
@@ -40,15 +40,14 @@ h1{
 }
 
 .top{
-  top: 20px;
-  height: 400px;
+  padding-top: 25px;
   width: 100%;
   position: static;
   padding-bottom: 25px;
 }
 
 .about{
-  width: 50%;
+  max-width: 60%;
   float: left;
   position: static;
   height: auto;
@@ -57,9 +56,8 @@ h1{
 
 .image{
   float: right;
-  max-width: 35%;
+  max-width: 30%;
   max-height: 100%;
-  width: 35%;
   position: static;
   height: auto;
 }
@@ -73,6 +71,8 @@ h1{
 }
 
 .projects{
+  float: left;
+  width: 100%;
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -101,6 +101,21 @@ a:hover {
     color: #ff8e8f;
 }
 
+
+
+@media (min-width: 500px) and (max-width: 949px){
+  .container{
+    position:relative;
+    width: 100%;
+  }
+  .project{
+    width: 40%;
+  }
+  #project3{
+    width: 85%;
+  }
+}
+
 @media (min-width: 950px){
   .container{
     position: relative;
@@ -109,17 +124,5 @@ a:hover {
   .project{
     width: 27%;
   }
-}
 
-@media (min-width: 500px) and (max-width: 949px){
-  .container{
-    position:relative;
-    width: 90%;
-  }
-  .project{
-    width: 40%;
-  }
-  #project3{
-    width: 85%;
-  }
 }
