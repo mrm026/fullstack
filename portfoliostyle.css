@@ -1,0 +1,125 @@
+html{
+  background-color: #E8F3F4;
+}
+
+
+p{
+  font-family: 'Quicksand';
+  color: #053138;
+  font-size: 100%;
+}
+
+h2{
+  font-family: 'Raleway';
+  color: #053138;
+}
+h3{
+  font-family: 'Raleway';
+  color:#053138;
+}
+
+div{
+  padding: 10px;
+}
+
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+    background-color: #E88340;
+}
+
+h1{
+  font-family: 'Work Sans';
+  font-size: 350%;
+  color: #E8F3F4;
+
+}
+
+.top{
+  top: 20px;
+  height: 400px;
+  width: 100%;
+  position: static;
+  padding-bottom: 25px;
+}
+
+.about{
+  width: 50%;
+  float: left;
+  position: static;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.image{
+  float: right;
+  max-width: 35%;
+  max-height: 100%;
+  width: 35%;
+  position: static;
+  height: auto;
+}
+
+
+.middle{
+  width: 100%;
+  float: left;
+  height: auto;
+  position: static;
+}
+
+.projects{
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.project{
+  float: left;
+  width: 90%;
+  background-color: #053138;
+  margin: 5px;
+}
+
+.ptext{
+  color: #E8F3F4;
+}
+
+/* unvisited link */
+a:link {
+    color: #F05D5E;
+}
+/* visited link */
+a:visited {
+    color: #C44536;
+}
+/* mouse over link */
+a:hover {
+    color: #ff8e8f;
+}
+
+@media (min-width: 950px){
+  .container{
+    position: relative;
+    width: 90%;
+  }
+  .project{
+    width: 27%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 949px){
+  .container{
+    position:relative;
+    width: 90%;
+  }
+  .project{
+    width: 40%;
+  }
+  #project3{
+    width: 85%;
+  }
+}
