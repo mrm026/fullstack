@@ -1,104 +1,129 @@
 html{
-  background-color: #E8F3F4;
+  background-color: #bfc7ff;
 }
 
 
 p{
   font-family: 'Quicksand';
-  color: #053138;
+  color: #ffffff;
   font-size: 105%;
 }
 
 h2{
   font-family: 'Raleway';
-  color: #053138;
+  color: #ffd86b;
 }
 h3{
   font-family: 'Raleway';
-  color:#053138;
+  color: #ffd86b;
 }
 
 div{
-  padding: 10px;
+  padding: 1%;
 }
 
 .container{
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0px;
 }
 
 .title{
-    background-color: #E88340;
+    background-color: #2E356E;
+    width: 90%;
 }
 
 h1{
   font-family: 'Work Sans';
   font-size: 350%;
-  color: #E8F3F4;
+  color: #ffd86b;
+  padding: 10px;
 
 }
 
 .top{
   padding-top: 25px;
-  width: 100%;
+  width: 90%;
   position: static;
   padding-bottom: 25px;
+
 }
 
 .about{
-  max-width: 60%;
+  max-width: 90%;
   float: left;
+  width: 90%;
+  background-color: #5E6DCC;
   position: static;
   height: auto;
   padding-bottom: 30px;
 }
 
 .image{
-  float: right;
-  max-width: 30%;
-  max-height: 100%;
+  float: left;
+  max-width: 90%;
+  margin-bottom: 10px;
+  background-color: #5E6DCC;
+  width: 90%;
   position: static;
   height: auto;
+
 }
+
 
 
 .middle{
-  width: 100%;
+  width: 90%;
   float: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
   height: auto;
+  background-color: #5E6DCC;
   position: static;
 }
 
-.projects{
+.projectHeader{
+  width: 90%;
   float: left;
-  width: 100%;
+  position: static;
+  background-color: #5E6DCC;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
   padding-bottom: 20px;
   overflow: hidden;
+  background-color: #5E6DCC;
 }
 
 .project{
   float: left;
   width: 90%;
-  background-color: #053138;
-  margin: 5px;
+  background-color: #2E356E;
+  margin: 1%;
+  padding: 1%;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .ptext{
-  color: #E8F3F4;
+  color: #e8ebf4;
 }
 
 /* unvisited link */
 a:link {
-    color: #F05D5E;
+    color: #E4B737;
 }
-/* visited link */
+
 a:visited {
-    color: #C44536;
+    color: #E4B737;
 }
-/* mouse over link */
+
 a:hover {
-    color: #ff8e8f;
+    color: #E4B737;
 }
 
 
@@ -106,13 +131,20 @@ a:hover {
 @media (min-width: 500px) and (max-width: 949px){
   .container{
     position:relative;
-    width: 100%;
+    width: 90%;
   }
   .project{
     width: 40%;
   }
+  #project1{
+    text-align: left;
+  }
+  #project2{
+    text-align: right;
+  }
   #project3{
     width: 85%;
+    text-align: center;
   }
 }
 
@@ -122,7 +154,29 @@ a:hover {
     width: 90%;
   }
   .project{
-    width: 27%;
+    width: 29%;
+  }
+  #project3{
+    text-align: right;
+  }
+  #project2{
+    text-align: center;
+  }
+  .about{
+    max-width: 60%;
+    float: left;
+    width: 60%;
+    position: static;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .image{
+    float: right;
+    max-width: 25%;
+    width: 25%;
+    position: static;
+    height: auto;
   }
 
 }
