@@ -1,0 +1,34 @@
+.mainHeading{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 300%;
+    font-weight: lighter;
+    font-stretch: expanded;
+    background-color: #ffc0b2;
+}
+
+h2{
+  font-family: 'Raleway', serif;
+  font-stretch: expanded;
+}
+
+#heading1{
+  background-color: #bad4ff;
+}
+
+body{
+  font-family: 'Quicksand';
+}
+
+
+#heading2{
+  font-family: 'Work Sans';
+  font-style: italic;
+  color: #214784;
+  background-color: unset;
+}
+
+#p2{
+  font-family: 'PT Sans';
+  font-weight: 100;
+  color: #102d5b;
+}
