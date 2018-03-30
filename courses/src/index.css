@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans|Quicksand|Raleway|PT+Sans|Open+Sans');
+
+
+.navbar{
+    color: rgba( 26, 96,149,1);
+    background-color: rgba( 12, 52, 83,1);
+    border-bottom: 2px;
+    border-color: white;
+    margin-bottom: 20px;
+  }
+
+#jumbotron{
+  margin-top: 20px;
+  font-family: 'Raleway';
+  text-align: center;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 10;
+  font-family: 'Open Sans';
+  text-align: center;
+	background-color: #003865;
+	font-family: 'Work Sans', serif;
+}
+
+h1{
+font-size:45px;
+text-align: center;
+}
+
+.h4 h4 {
+  font-family: 'Work Sans', serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.root{
+  text-align: center;
+	background-color: #003865;
+	font-family: 'Raleway', serif;
+}
+
+.list{
+	margin: 0 auto;
+
+}
+.secTitle{
+
+  font-family: 'Raleway';
+	color:#FFFFFF;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.head{
+	margin-top: 20px;
+	margin-bottom: 0px;
+	background-color: #007db3;
+  color:#E87722;
+}
+
+.col{
+  text-align: center;
+}
+
+.content{
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+	background-color: 	#EEEEEE;
+}
+
+
+
+
+select{
+margin-bottom: 10px!important;
+
+}
+
+.card{
+  font-size: 15px;
+}
+
+.av{
+margin-top:20px;
+}
+
+.underl{
+text-decoration:underline;
+
+}
+
+
+.form{
+  text-align: center;
+}
+
+.dropdown{
+  text-align: center;
+}
+
+.cName{
+font-size:20px;
+}
+.cTitle{
+font-size:18px;
+}
+
+
+.cselect{
+max-width:100%;
+
+}
