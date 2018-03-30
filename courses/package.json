@@ -2,7 +2,7 @@
   "name": "courses",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mrm026.github.io/fullstack/courses",
+  "homepage": "https://mrm026.github.io/fullstack/courses/release/v1.0",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.3.0",
