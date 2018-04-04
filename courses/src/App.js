@@ -251,9 +251,12 @@ constructor(props){
     this.handleSemesterChange= this.handleSemesterChange.bind(this)
 	  this.handleCCCChange= this.handleCCCChange.bind(this)
     this.handleTimeSubmit= this.handleTimeSubmit.bind(this)
-    this.handleRoomSubmit= this.handleRoomSubmit.bind(this)
 
   }
+
+
+
+  ////  HANDLE DEPARTMENT CHANGE ///////////
 	handleDepartmentChange(event){
 	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	var count=0;
@@ -326,10 +329,14 @@ constructor(props){
           }
         })
 		.catch(err=>console.log("Couldn't fetch ", err))
-        }
+    }
     );
 
 }
+
+
+//////////// HANDLE YEAR CHANGE ///////////////////////////////////
+
 	handleYearChange(event){
 	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	var count=0;
@@ -408,7 +415,7 @@ this.setState({year:event},() => {
 }
 
 
-
+/////////// HANDLE SEMESTER CHANGE /////////////////////////////////
 
 	handleSemesterChange(event){
 	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
@@ -486,9 +493,11 @@ this.setState({year:event},() => {
 		.catch(err=>console.log("Couldn't fetch", err))
         }
     );
-
-
 }
+
+
+///////////////// HANDLE CCC CHANGE //////////////////////////////////
+
 handleCCCChange(event){
 	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
 	var count=0;
@@ -567,6 +576,10 @@ handleCCCChange(event){
 });
 }
 
+
+
+////////////////// HANDLE TIME SUBMIT //////////////////////////////////
+
 handleTimeSubmit(event){
 
 	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?'
@@ -631,79 +644,10 @@ handleTimeSubmit(event){
 		.catch(err=>console.log("Couldn't fetch", err))}
 });
 }
-handleRoomSubmit(event){
-	var x= 'https://www.eg.bucknell.edu/~amm042/service/q?';
-	var count=0;
-	this.setState({room:event},()=>{
-if(this.state.semester!==null && this.state.semester!=="unselected"){
-			if(x.slice(-1)==="?"){
-				x= x+"Semester="+this.state.semester
-			}else{
-				x= x+"&Semester="+this.state.semester
-			}
-		}else{count=count+1;}
-		if(this.state.year!==null && this.state.year!=="unselected"){
-			if(x.slice(-1)==="?"){
-				x= x+"Year="+this.state.year
-			}else{
-				x= x+"&Year="+this.state.year
-			}
-		}else{count=count+1;}
-		if(this.state.department!==null && this.state.department!=="unselected"){
-			if(x.slice(-1)==="?"){
-				x= x+"Department="+this.state.department
-			}else{
-				x= x+"&Department="+this.state.department
-			}
-		}else{count=count+1;}
-		if(this.state.ccc!==null && this.state.ccc!=="unselected"){
-			if(x.slice(-1)==="?"){
-				x= x+"CCCReq="+this.state.ccc
-			}else{
-				x= x+"&CCCReq="+this.state.ccc
-			}
-		}else{count=count+1;}
-		if(this.state.room!==null && this.state.room!==""){
-			if(x.slice(-1)==="?"){
-				x= x+"text=%22"+encodeURIComponent(this.state.room)+"%22"
-			}else{
-				x= x+"&text=%22"+encodeURIComponent(this.state.room)+"%22"
-			}
-		}else{count=count+1;}
-		x=x+'&limit=100'
 
-		fetch(x)
-		.then(result=>result.json())
-		.then(result=>{
-          if (result.message.length>0){
-		if(this.state.time!==null && this.state.time!==""){
-			var temp=[]
-		var i
-		for(i=0; i<result.message.length-1; i++){
 
-			if(result.message[i]['Meeting Time'].includes(this.state.time)){ temp.push(result.message[i]); }
-			}
-	    if(temp.length>0){
-            this.setState({list:temp})}else{this.setState({list:[{Course:"No available courses."}]})}
-		}else{	count=count+1;
-			if(count===6){
-			this.setState({list:[{Course:" "}]})
-			}else{
-			this.setState({list:result.message})
-			}
-		}
+/////////////////////////////////////////////////////////////////////
 
-	 }
-          else {
-		if(this.state.year===null && this.state.semester===null && this.state.department===null && this.state.ccc===null){
-		 this.setState({list:[{Course:" "}]})
-		}else{
-            this.setState({list:[{Course:"No available courses."}]})}
-          }
-        })
-		.catch(err=>console.log("Couldn't fetch", err))});
-
-}
 
 componentDidMount(){
 
@@ -726,7 +670,7 @@ componentDidMount(){
 }
 
 
-  ///// RENDER SEARCH RESULTS
+  ///// RENDER SEARCH RESULTS  ////////////////////////////////////
 
 	render(){
 	var options
