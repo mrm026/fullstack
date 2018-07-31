@@ -3,75 +3,149 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Work+Sans|Quicksand|Raleway|PT+Sans">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/project1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/index.css">
+
   <title>Morgan's Web Portfolio</title>
 </head>
 
 <body>
-  <div class="container">
-      <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-column flex-md-row justify-content-between">
-        <a class="py-2" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="rose.png"></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="MyNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Technical Projects</a></li>
+            <li><a href="#">Artwork</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="mountains.png">
+          <div class="carousel-caption">
+            <h1>Welcome to my portfolio!</h1>
+            <br>
+            <button type="button" class="btn btn-default">Get Started</button>
+          </div>
+        </div> <!-- End Active -->
+        <div class="item">
+          <img src="snow.png">
+        </div>
+        <div class="item">
+          <img src="red.png">
+        </div>
+        <!--- Start Slider Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only"></span>
         </a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
-        <a class="py-2 d-none d-md-inline-block" href="#sample_coursework">Sample Coursework</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">Contact</a>
-        <a class="py-2 d-none d-md-inline-block" href="#">About</a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+
       </div>
-      </nav>
-    <div class="title">
-    <header><h1 class="display-3">Morgan's Web Portfolio </h1></header>
+
+    </div> <!-- end slider -->
+
+    <div class="container text-center">
+      <h2> Who I am</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="B.png" id="icon">
+          <h4>Bucknell Graduate</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="computer.png" id="icon">
+          <h4>Computer Engineer</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="tablet.png" id="icon">
+          <h4>Artist</h4>
+        </div>
+      </div>
     </div>
+
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <img src="morgan.jpg" alt="Morgan">
+        <div class="col-md-6">
+          <h4> A bit more about me</h4>
+          <p>
+          Currently living in Philadelphia, PA, I am a 2018 computer engineering
+          college graduate searching for a full-time position in software development
+          or software engineering.
+          </p>
+          <p>
+          (MORE TEXT HERE)          
+          </p>
+        </div>
+        <div class="col-md-6">
+            <img src="bootstrap2.jpg" class="img-responsive">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row">
+          <h4><a href="#hidden" data-toggle="collapse">A bit more about me</a></h4>
+          <div id="hidden" class="collapse">
+            <p>
+
+            </p>
+            <p>
+
+            </p>
+          </div>
+
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
           <h3>Contact</h3>
-          <p>Email: mrm026@bucknell.edu</p>
+          <br>
+          <h4>Address and contact info here.</h4>
         </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-8">
-          <h2>About This Course</h2>
-          <p>This Spring 2018 course aims to teach an introduction to fullstack web development.</p>
-          <h2>About Morgan</h2>
-          <p>Morgan is a computer engineering student at Bucknell University. She is also an artist and aspiring designer.</p>
-          <h3>Overview</h3>
-          <p>This portfolio will contain Morgan's various artistic and engineering endeavors, especially those created
-          as part of Alan Marchiori's Fullstack Web Development course at Bucknell University. </p>
+        <div class="col-sm-4">
+          <h3>Connect</h3>
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-linkedin"></a>
         </div>
-      </div>
-    </div>
-
-    <div class="middle" id="sample_coursework">
-      <h2>Sample Coursework</h2>
-      <p><a href="fontfun.html">Font Fun!</a></p>
-      <p><a href="dogsapi.html">What kind of dog should you get according to your favorite ice cream flavor?</a></p>
-    </div>
-    <div class="projectHeader">
-    <h2>Projects</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4" id="project1">
-          <h3 class="ptext">Project 1</h3>
-          <p class="ptext">We explored how easy it is to use bootstrap to make reactive website layouts! Try resizing your window on this page to see the results.</p>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-4" id="project2">
-          <h3 class="ptext">Project 2</h3>
-          <p class="ptext">We learned how to make web apps with React! You can view the result <a href="https://mrm026.github.io/fullstack/courses/release/v1.0/">here</a>!</p>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4" id="project3">
-          <h3 class="ptext">Project 3</h3>
-          <p class="ptext">This will contain the text describing project 3.</p>
+        <div class="col-sm-4">
+          <h3>Contact</h3>
+          <br>
+          <h4>Address and contact info here.</h4>
         </div>
       </div>
-  </div>
-  </div>
+    </footer>
+
 
 
 
