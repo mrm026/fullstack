@@ -8,6 +8,7 @@ body {
   padding: 0;
 }
 
+
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -98,4 +99,26 @@ footer{
 #icon{
   max-width: 200px;
   margin: 1% auto;
+}
+
+.post{
+  padding: 20px 40px 80px 40px;
+  margin: auto;
+}
+
+.post p{
+  font-size: 16px;
+}
+
+.figure{
+  margin: auto;
+}
+
+.caption{
+  font-size: 12px;
+}
+
+.figure img{
+  margin: auto;
+  max-height: 300px;
 }
