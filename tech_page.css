@@ -1,0 +1,134 @@
+
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #883955;
+  color: #ffffff;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}
+
+.navbar-brand
+{
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 0px 10px;
+}
+
+.navbar-brand img
+{
+    max-height: 100%;
+}
+
+.navbar-inverse .navbar-nav .active a,.navbar-inverse .navbar-nav .active a:focus,.navbar-inverse .navbar-nav .active a:hover {
+  color: #ffffff;
+  background-color: #883955;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: #d5d5d5;
+}
+
+h1{
+  text-align: center;
+  margin: 30px;
+  margin-top: 50px;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+.card {
+  display: block;
+  padding: 20px;
+  margin: 10px;
+  background-color: #eeeeee;
+}
+
+.card-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 0;
+	z-index: 1;
+}
+
+.card-img img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
