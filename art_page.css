@@ -36,10 +36,7 @@ h1{
   margin-top: 50px;
   background-color: #eeeeee;
   padding: 10px;
-}
 
-h2{
-  text-align: center;
 }
 
 .container.gallery-container {
@@ -50,12 +47,7 @@ h2{
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
 }
 
-.gallery-container h1 {
-    text-align: center;
-    margin-top: 70px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
-}
+
 
 .gallery-container p.page-description {
     text-align: center;
@@ -105,4 +97,29 @@ h2{
 .column img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+footer{
+  width 100%;
+  background-color: #883955;
+  padding: 5%;
+  color: #ffffff;
+}
+
+.fab{
+  padding:15px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.fa:hover{
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+@media(max-width:900px){
+  .fa{
+    font-sixe:20px;
+    padding:10px;
+  }
 }

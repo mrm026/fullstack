@@ -132,3 +132,29 @@ h2{
 	height: auto;
 	display: block;
 }
+
+
+footer{
+  width 100%;
+  background-color: #883955;
+  padding: 5%;
+  color: #ffffff;
+}
+
+.fab{
+  padding:15px;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.fa:hover{
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+@media(max-width:900px){
+  .fa{
+    font-sixe:20px;
+    padding:10px;
+  }
+}
