@@ -40,6 +40,24 @@ h1{
 
 h2{
   text-align: center;
+  margin-top: 50px;
+}
+
+
+p{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.4em;
+}
+
+iframe{
+  display: block;
+  width: 75%;
+}
+
+.powerpoint{
+  margin: 20px;
 }
 
 .container.gallery-container {
